@@ -468,7 +468,7 @@ NICETIES_LIST = [
 	],
 ]
 
-THANKYOU_RESPONSES = ["You're welcome.", "Happy to help.", "No problem.", "Sure thing."]
+THANKYOU_RESPONSES = ["You're welcome.", "Happy to help.", "No problem.", "Sure thing.", "NP!"]
 AGE_RESPONSE = u"I was born on April 29th, 2015. That makes me about %s old! \U0001F423"
 HOW_DO_I_SHARE_KEEPER_RESPONSE = ":clapping_hands_sign: Please send them to %s and thanks!"
 MY_NAME_IS_NOT_ROGER_RESPONSE = "I know, it's just an expression %s!"
