@@ -50,13 +50,13 @@ TUTORIAL_MORNING_DIGEST_ONLY_TEXT = u"Oh and I'll also send you a morning txt \U
 
 # These is the first line of the digest, one per day of the week.
 REMINDER_DIGEST_HEADERS = [
-	u":sunrise: G'morning sunshine",
+	u":sunrise: G'morning sunshine", 
 	u"Tuesday, it is \U000026F2",
 	u"Wednesday is here already!",
 	u"How did Thursday sneak up on us? :cat:",
 	u"Friday funday! :party_popper:",
-	u"It's sit-around-day \U0001F344",
-	u"Sunday Sunday Sunday! \U0001F366"
+	u"It's sit-around-day \U0001F344", ":wavy_dash:Saturday vibes:wavy_dash:",
+	u"Sunday Sunday Sunday! \U0001F366", "Sunday funday! :raised_hands:", 
 ]
 
 # if there are tasks, begin with this header
@@ -108,6 +108,7 @@ REMINDER_PHRASES = [
 	u"Hello. Friendly reminder: ",
 	u"Hi! You wanted me to remind you:",
 	u"Hi! Don't forget:",
+
 ]
 
 # When you set a reminder, we ask you if you prefer another time.
@@ -199,7 +200,7 @@ BIRTHDAY_TIP_TEXT = "Hey :NAME:, if you've got a friend's birthday :birthday: co
 JOKE_TIP_TEXT = "Hey :NAME:, I'm the funniest digital assistant around! Just ask me to tell you a joke - guaranteed laughs or you get a pony :sunglasses:"
 PAY_BILLS_TIP_TEXT = "Hey :NAME:, I can also track bills for you. :page_with_curl: Just let me know when you need to pay them. Like 'Pay credit card on the 15th of every month' :postbox:"
 GROCERY_TIP_TEXT = "Hey :NAME:, Want any help remembering grocery list? You can say 'Buy pasta, cheese and sauce later today' :spaghetti:"
-TRASH_TIP_TEXT = "Hey :NAME:, do you have trouble remembering trash day? Just say 'Trash day every Tuesday' and I'll make sure you never forget. :pushpin:"
+TRASH_TIP_TEXT = "Hey :NAME:, do you have trouble remembering trash day? Just say 'Trash day ever y Tuesday' and I'll make sure you never forget. :pushpin:"
 APPOINTMENT_TIP_TEXT = "Btw, I'm great at reminding you about appointments. Just txt me when you need to go to the doctor, dentist, hair salon, DMV, etc. :mask:"
 TICKET_TIP_TEXT = "Want to remember to buy that show's tickets as soon as they go on sale? I can remind you at the exact time. Just txt me :ticket:"
 SHARED_REMINDER_TIP1_TEXT = "I can now remind other people on your behalf. Just say 'Remind Anne about lunch tomorrow at 12pm'"
