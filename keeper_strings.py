@@ -50,13 +50,13 @@ TUTORIAL_MORNING_DIGEST_ONLY_TEXT = u"Oh and I'll also send you a morning txt \U
 
 # These is the first line of the digest, one per day of the week.
 REMINDER_DIGEST_HEADERS = [
-	u":sunrise: G'morning sunshine",
-	u"Tuesday, it is \U000026F2",
-	u"Wednesday is here already!",
-	u"How did Thursday sneak up on us? :cat:",
-	u"Friday funday! :party_popper:",
-	u"It's sit-around-day \U0001F344",
-	u"Sunday Sunday Sunday! \U0001F366"
+	[u":sunrise: G'morning sunshine",],  # copy for Monday
+	[u"Tuesday, it is \U000026F2",],  # copy for Tuesday
+	[u"Wednesday is here already!",],  # Wednesday
+	[u"How did Thursday sneak up on us? :cat:",],  # Thursday
+	[u"Friday funday! :party_popper:",],  # Friday
+	[u"It's sit-around-day \U0001F344", ":wavy_dash:Saturday vibes:wavy_dash:"],  # Saturday
+	[u"Sunday Sunday Sunday! \U0001F366", "Sunday funday! :raised_hands:"],  # Sunday
 ]
 
 # if there are tasks, begin with this header
@@ -66,13 +66,13 @@ DIGEST_HEADER_USER_REQUESTED = u"Your current tasks: \U0001F4DD"  # this means u
 
 # If there are no tasks, this line is shown. One per day of the week.
 REMINDER_DIGEST_EMPTY = [
-	u"Start the week off right. Tell me what you need to get done this week! \U0001F60E",
-	u"No tasks today. I know it's hard to believe, but I'm really good at helping you get stuff done \U0001F4AD",
-	u"A day with nothing to do is the best. Unless you forgot your Mom's birthday. Don't be that kid \U0001F60E",
-	u"Empty day. Surely, there is something you need me to track? \U0001F62E",
-	u"No tasks for today. Then, again Fridays should be free days. \U0001F61B",
-	u"It might be the weekend but we still gotta keep moving. What can I do? \U0001F60E",
-	u"Last day of the week to get stuff done! \U0001F636"
+	[u"Start the week off right. Tell me what you need to get done this week! \U0001F60E",], #  For Monday
+	[u"No tasks today. I know it's hard to believe, but I'm really good at helping you get stuff done \U0001F4AD",], #  For Tuesday
+	[u"A day with nothing to do is the best. Unless you forgot your Mom's birthday. Don't be that kid \U0001F60E",], #  For Wednesday
+	[u"Empty day. Surely, there is something you need me to track? \U0001F62E",],  # For Thursday
+	[u"No tasks for today. Then, again Fridays should be free days. \U0001F61B",],  # For Friday
+	[u"It might be the weekend but we still gotta keep moving. What can I do? \U0001F60E",],  # For Saturday
+	[u"Last day of the week to get stuff done! \U0001F636",],  # For Sunday
 ]
 
 USER_REQUESTED_DIGEST_EMPTY = [
@@ -320,10 +320,10 @@ RESPONSE_FOR_WHO_REFERRED_YOU = 'Great, thanks!'
 #  ]
 # If more than one response, then it picks at random
 # None means we won't respond to it.
-
+PONY_RESPONSE = "Fine. Here's your pony :horse:"
 NICETIES_LIST = [
 	[
-		"hi$|hello( keeper)?$|hey( keeper)?$",
+		"(hi|hello|hey|heya) ?(keeper|there)?$",
 		["Hi there."]
 	],
 	[
@@ -372,11 +372,11 @@ NICETIES_LIST = [
 	],
 	[
 		"are you( a)? real( person)?|are you human|are you an? (computer|machine)|are you an ai",
-		["Do you think I am?"]
+		["I'm an automated digital assistant, but I have human minions to help me. :smile_cat:"]
 	],
 	[
 		"(is this|are you).* (human|ai|a machine|automated|computer|person)",
-		["Do you think I am?"]
+		["I'm an automated digital assistant, but I have human minions to help me. :smile_cat:"]
 	],
 	[
 		"whats the meaning of life",
@@ -455,7 +455,7 @@ NICETIES_LIST = [
 		["Sorry, I'm already taken! :bride_with_veil: I'm here to help you remember stuff though!"]
 	],
 	[
-		"good (morning|evening|afternoon|day)",
+		"good ?(morning|evening|night|afternoon|day) ?(keeper)?$",
 		["Thanks, same to you! :smiling_face_with_smiling_eyes:"]
 	],
 	[
@@ -464,11 +464,16 @@ NICETIES_LIST = [
 	],
 	[
 		"that was(nt| not) funny|that(s| was) a (terrible|bad|awful) joke|i did(nt| not) laugh|.*wheres my pony|thats not funny",
-		["Fine. Here's your pony :horse:"]
+		[PONY_RESPONSE]
+	],
+	[
+		"(today is|its) my (birthday|bday)",
+		["Happy Birthday! :birthday:"]
 	],
 ]
 
-THANKYOU_RESPONSES = ["You're welcome.", "Happy to help.", "No problem.", "Sure thing.", "NP!"]
+
+THANKYOU_RESPONSES = ["You're welcome.", "Happy to help.", "No problem.", "Sure thing."]
 AGE_RESPONSE = u"I was born on April 29th, 2015. That makes me about %s old! \U0001F423"
 HOW_DO_I_SHARE_KEEPER_RESPONSE = ":clapping_hands_sign: Please send them to %s and thanks!"
 MY_NAME_IS_NOT_ROGER_RESPONSE = "I know, it's just an expression %s!"
