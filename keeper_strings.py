@@ -9,7 +9,7 @@ from smskeeper import keeper_constants
 
 # Intro messages for different types of users
 INTRO_MESSAGES = [
-	u"\U0001F44B Hi, I'm Keeper! I'm here to help you remember small things that are easy to forget.",
+	u"\U0001F44B Hi, I'm Keeper! I'm here to help you remember small things that are easy to forget.", "Hi! I'm Keeper :wave:, I'm here to help you remember anything and everything.", "Yo! I'm Keeper, I can help you remember things any time."
 	"Let me show you how I can help you. First, what's your name?"
 ]
 
@@ -31,10 +31,10 @@ ZIPCODE_NOT_VALID_TEXT = "Sorry, I don't know that zipcode. Could you check that
 ASK_AGAIN_FOR_ZIPCODE_TEXT = "Got it, but first thing, what's your zipcode?"
 
 # When a user sets their *first* reminder and don't give us time, we ask them to clarify
-ASK_FOR_TIME_TEXT = "Great, and when would you like to be reminded?" , "Perfect, what time would you like to be reminded?"
+ASK_FOR_TIME_TEXT = "Great, and when would you like to be reminded?" , "Perfect, what time would you like to be reminded?", "Cool, what time should I remind you?"
 
-TUTORIAL_POST_NAME_AND_ZIPCODE_TEXT = u"\U0001F44F Thanks! Let's add something you need to get done. \u2705"
-TUTORIAL_ADD_FIRST_REMINDER_TEXT = u"What's an item on your todo list right now? You can say things like 'Buy flip flops tomorrow' or 'Pick up Susie at 2:30 Friday'."
+TUTORIAL_POST_NAME_AND_ZIPCODE_TEXT = u"\U0001F44F Thanks! Let's add something you need to get done. \u2705", " Let's get this to do list started. What's first?"
+TUTORIAL_ADD_FIRST_REMINDER_TEXT = u"What's an item on your todo list right now? You can say things like 'Buy flip flops tomorrow' or 'Pick up Susie at 2:30 Friday'." 
 TUTORIAL_STUDENT_ADD_FIRST_REMINDER_TEXT = u"What's an item on your todo list right now? You can say things like 'Submit club dues on Friday' or 'Meet with advisor on Monday at 4pm'."
 
 TUTORIAL_DONE_TEXT = u"It's that easy. Just txt me when things pop in your head and I'll track them for you. \U0001F60E What else do you need to do?"
