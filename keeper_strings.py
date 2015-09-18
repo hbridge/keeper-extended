@@ -12,8 +12,8 @@ from smskeeper import keeper_constants
 INTRO_MESSAGES = [
 	[
 		u"\U0001F44B Hi, I'm Keeper! I'm here to help you remember small things that are easy to forget.",
-		u"Hi! I'm Keeper :wave:, I'm here to help you remember anything and everything.",
-		u"Yo! I'm Keeper, I can help you remember things any time."
+		u"Hi, I'm Keeper :wave:! I'm here to help you remember anything and everything.",
+		u"Hey, I'm Keeper! I can help you remember things any time."
 	],
 	[
 		u"Let me show you how I can help you. First, what's your name?",
@@ -182,7 +182,7 @@ SWEEP_MESSAGE_TEXT = "Btw, I moved these old tasks to %s to keep your list fresh
 REMINDER_PHRASES = [
 	u"Reminder for you:",
 	u"Reminder:",
-	u"Hi there! Wanted to remind you: ",
+	u"Hi there! Wanted to remind you:",
 	u"Hello. Friendly reminder: ",
 	u"Hi! Don't forget:",
 ]
