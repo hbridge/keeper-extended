@@ -34,7 +34,7 @@ ASK_AGAIN_FOR_NAME = [
 ]
 GOT_NAME_RESPONSE = [
 	u"Great, nice to meet you %s! \U0001F44B",
-	u"Thanks, %s!. Awesome to meet you. :wave:",
+	u"Thanks, %s! Awesome to meet you. :wave:",
 	u"Thanks! I'm sure we'll be great friends, %s!",
 ]
 
@@ -94,11 +94,11 @@ REMINDER_DIGEST_HEADERS = [
 	[  # copy for Monday
 		u":sunrise: G'morning sunshine",
 		u"Rise 'n grind, Monday is here :sunny:",
-		u"Good morning, %s!",
+		u"Good morning!",
 	],
 	[  # copy for Tuesday
 		u"Tuesday, it is \U000026F2",
-		u"Happy Tuesday, %s! :v:",
+		u"Happy Tuesday, :NAME:! :v:",
 	],
 	[  # copy for Wednesday
 		u"Wednesday is here already!",
