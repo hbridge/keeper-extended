@@ -71,8 +71,8 @@ TUTORIAL_ADD_FIRST_REMINDER_TEXT = [
 
 # Student-only tutorial: Immediately follows one of the above lines in TUTORIAL_POST_NAME_AND_ZIPCODE_TEXT
 TUTORIAL_STUDENT_ADD_FIRST_REMINDER_TEXT = [
-	u"What's an item on your todo list right now? You can say things like 'Submit club dues on Friday' or 'Meet with advisor on Monday at 4pm'.",
-	u"What's on your todo list right now? Things like 'finish homework by 4' or 'walk the dog tonight' are some examples.",
+	u"What's an item on your todo list right now? You can say things like 'Submit club dues on Friday' or 'Meet with advisor on Monday at 4PM'.",
+	u"What's on your todo list right now? Things like 'finish homework by 4PM' or 'walk the dog tonight' are some examples.",
 ]
 
 TUTORIAL_DONE_TEXT = u"It's that easy. Just txt me when things pop in your head and I'll track them for you. \U0001F60E What else do you need to do?"
@@ -95,31 +95,43 @@ REMINDER_DIGEST_HEADERS = [
 		u":sunrise: G'morning sunshine",
 		u"Rise 'n grind, Monday is here :sunny:",
 		u"Good morning!",
+		u"Morning, :NAME:! :coffee:"
+		u"Monday got me like: :sleeping:"
+		u"How is it already Monday again? :ghost:"
 	],
 	[  # copy for Tuesday
 		u"Tuesday, it is \U000026F2",
 		u"Happy Tuesday, :NAME:! :v:",
+		u":see_no_evil: Morning! :hear_no_evil:",
 	],
 	[  # copy for Wednesday
 		u"Wednesday is here already!",
 		u"How is it already Wednesday? :eyes:",
+		u"Happy hump day :v:",
+		u"It's a brand new day! :sunny:",
+		u"Mornin'! :dog:"
 	],
 	[  # copy for Thursday
 		u"How did Thursday sneak up on us? :cat:",
-		u"How is it already Wednesday? :eyes:"],
+		u"How is it already Thursday? :eyes:"],
+		u"Happy Thursday, :NAME:! :punch:",
+		u"Good morning :innocent:"
 	[  # copy for Friday
 		u"Friday funday! :party_popper:",
 		u"TGIF :tada:",
+		u"Shout out to Friday :raised_hands:",
+		u"Ahh, Friday. :ok_hand:",
 	],
 	[  # copy for Saturday
 		u"It's sit-around-day \U0001F344",
 		u":wavy_dash:Saturday vibes:wavy_dash:",
 		u"Ahh, Saturday... The best day of the week.",
+		u"So much yes to Saturday :open_hands:",
 	],
 	[  # copy for Sunday
 		u"Sunday Sunday Sunday! \U0001F366",
 		u"Sunday funday! :raised_hands:",
-		u"Good morning!",
+		u"Sunday is for :zzz:",
 	],
 ]
 
@@ -132,24 +144,30 @@ DIGEST_HEADER_USER_REQUESTED = u"Your current tasks: \U0001F4DD"  # this means u
 REMINDER_DIGEST_EMPTY = [
 	[  # Monday
 		u"Start the week off right. Tell me what you need to get done! \U0001F60E",
+		u"Anything on your todo list for Monday?:pencil:", 
 	],
 	[  # Tuesday
 		u"No tasks today. I know it's hard to believe, but I'm really good at helping you get stuff done \U0001F4AD",
 	],
 	[  # Wednesday
 		u"A day with nothing to do is the best. Unless you forgot your Mom's birthday. Don't be that kid \U0001F60E",
+		u"No tasks today, but I'm sure you can think of something for me to help you with.",
 	],
 	[  # Thursday
 		u"Empty day. Surely, there's something you need me help with? \U0001F62E",
+		u"Don't forget to get stuff done before the weekend!",
 	],
 	[  # Friday
 		u"No tasks for today. Then again, Fridays should be free days. \U0001F61B",
+		u"Dang, Friday really is your funday. No tasks!",
 	],
 	[  # Saturday
-		u"It might be the weekend but we still gotta keep moving. What can I do? \U0001F60E",
+		u"It might be the weekend but the hustle never sleeps. What can I do? \U0001F60E",
+		u"What can I help you with? Surely you've got something you're forgetting :smirk:",
 	],
 	[  # Sunday
 		u"Last day of the week to get stuff done! \U0001F636",
+		u"Quick, before Monday rolls around. What can I help you get done?",
 	],
 ]
 
