@@ -71,8 +71,8 @@ TUTORIAL_ADD_FIRST_REMINDER_TEXT = [
 
 # Student-only tutorial: Immediately follows one of the above lines in TUTORIAL_POST_NAME_AND_ZIPCODE_TEXT
 TUTORIAL_STUDENT_ADD_FIRST_REMINDER_TEXT = [
-	u"What's an item on your todo list right now? You can say things like 'Submit club dues on Friday' or 'Meet with advisor on Monday at 4PM'.",
-	u"What's on your todo list right now? Things like 'finish homework by 4PM' or 'walk the dog tonight' are some examples.",
+	u"What's an item on your todo list right now? You can say things like 'Submit club dues on Friday' or 'Meet with advisor on Monday at 4pm'.",
+	u"What's on your todo list right now? Things like 'finish homework by 4pm' or 'walk the dog tonight' are some examples.",
 ]
 
 TUTORIAL_DONE_TEXT = u"It's that easy. Just txt me when things pop in your head and I'll track them for you. \U0001F60E What else do you need to do?"
@@ -95,27 +95,29 @@ REMINDER_DIGEST_HEADERS = [
 		u":sunrise: G'morning sunshine",
 		u"Rise 'n grind, Monday is here :sunny:",
 		u"Good morning!",
-		u"Morning, :NAME:! :coffee:"
-		u"Monday got me like: :sleeping:"
-		u"How is it already Monday again? :ghost:"
+		u"Morning, :NAME:! :coffee:",
+		u"Monday got me like: :sleeping:",
+		u"How is it already Monday again? :ghost:",
 	],
 	[  # copy for Tuesday
 		u"Tuesday, it is \U000026F2",
-		u"Happy Tuesday, :NAME:! :v:",
-		u":see_no_evil: Morning! :hear_no_evil:",
+		u"Happy Tuesday, :NAME:!",
+		u":see_no_evil: Morning! :hear_no_evil:"
 	],
 	[  # copy for Wednesday
 		u"Wednesday is here already!",
 		u"How is it already Wednesday? :eyes:",
-		u"Happy hump day :v:",
+		u"Happy hump day",
 		u"It's a brand new day! :sunny:",
-		u"Mornin'! :dog:"
+		u"Mornin'! :dog:",
 	],
 	[  # copy for Thursday
 		u"How did Thursday sneak up on us? :cat:",
-		u"How is it already Thursday? :eyes:"],
+		u"Happy Thursday :sunglasses:",
+		u"How is it already Thursday? :eyes:",
 		u"Happy Thursday, :NAME:! :punch:",
-		u"Good morning :innocent:"
+		u"Good morning :innocent:",
+	],
 	[  # copy for Friday
 		u"Friday funday! :party_popper:",
 		u"TGIF :tada:",
@@ -131,6 +133,7 @@ REMINDER_DIGEST_HEADERS = [
 	[  # copy for Sunday
 		u"Sunday Sunday Sunday! \U0001F366",
 		u"Sunday funday! :raised_hands:",
+		u"Good morning!",
 		u"Sunday is for :zzz:",
 	],
 ]
@@ -144,7 +147,7 @@ DIGEST_HEADER_USER_REQUESTED = u"Your current tasks: \U0001F4DD"  # this means u
 REMINDER_DIGEST_EMPTY = [
 	[  # Monday
 		u"Start the week off right. Tell me what you need to get done! \U0001F60E",
-		u"Anything on your todo list for Monday?:pencil:", 
+		u"Anything on your todo list for Monday? :pencil:",
 	],
 	[  # Tuesday
 		u"No tasks today. I know it's hard to believe, but I'm really good at helping you get stuff done \U0001F4AD",
@@ -190,6 +193,8 @@ CHANGE_MORNING_DIGEST_TIME_TEXT = "Great, I'll send you a daily summary at %s fo
 # When we move the old tasks off your daily list
 SWEEP_MESSAGE_TEXT = "Btw, I moved these old tasks to %s to keep your list fresh:\n"
 
+# when people manually request their tasks, we add this to the bottom to tell them how they can manage on the web
+FETCH_DIGEST_FOOTER = "\nYou can also see and manage your tasks at %s"
 
 
 #########################
@@ -201,9 +206,9 @@ REMINDER_PHRASES = [
 	u"Reminder for you:",
 	u"Reminder:",
 	u"Hi there! Wanted to remind you:",
-	u"Hello. Friendly reminder: ",
+	u"Hello. Friendly reminder:",
 	u"Hi! Don't forget:",
-	u":NAME:, reminder for you:".
+	u":NAME:, reminder for you:",
 	u"Quick thing!",
 ]
 
@@ -270,7 +275,6 @@ UNKNOWN_COMMAND_PHRASES = [
 	u"Err... Not sure what you mean.",
 	u"Not sure what that means :grimacing:",
 	u"Mind saying that again? I didn't get it :pensive:",
-
 ]
 
 # When someone says 'report' to let us know something went wrong
@@ -468,11 +472,11 @@ NICETIES_LIST = [
 	],
 	[
 		"I(m| am) sorry|apologies|I apologize|sry",
-		[u"That's ok.", "Don't worry about it.", "No worries.", "I'm over it.", "All good :ok_hand:"]
+		[u"That's ok.", u"Don't worry about it.", u"No worries.", u"I'm over it.", u"All good :ok_hand:"]
 	],
 	[
 		"see you later|i have to go$",
-		[u"Ok, I'm here if you need me! \U0001F603", Sounds good! I'll be here. :sparkles:" ]
+		[u"Ok, I'm here if you need me! \U0001F603", u"Sounds good! I'll be here. :sparkles:"]
 	],
 	[
 		"thats (all|it)( for (right )?now)?|(nothing|not) ((right|for) now|at the moment)",
