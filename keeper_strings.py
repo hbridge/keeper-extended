@@ -32,9 +32,9 @@ INTRO_MESSAGES_MEDICAL = [
 ASK_AGAIN_FOR_NAME = [
 	u"We'll get to that, but first what's your name?",
 	u"One sec, what's your name first?"
-]
+
 GOT_NAME_RESPONSE = [
-	u"Great, nice to meet you %s! \U0001F44B",
+	u"Great! Nice to meet you, %s! \U0001F44B",
 	u"Thanks, %s! Awesome to meet you. :wave:",
 	u"Thanks! I'm sure we'll be great friends, %s!",
 ]
@@ -65,14 +65,14 @@ TUTORIAL_ADD_FIRST_REMINDER_TEXT = [
 
 # Student-only tutorial: Immediately follows one of the above lines in TUTORIAL_POST_NAME_AND_ZIPCODE_TEXT
 TUTORIAL_STUDENT_ADD_FIRST_REMINDER_TEXT = [
-	u":thumbsup: What's an item on your todo list right now? You can say things like 'Pay club dues on Friday' or 'Meet with advisor on Monday at 4pm' and I'll remind you.",
+	u":thumbsup: What's an item on your todo list right now? You can say things like 'buy textbooks on Friday' or 'Meet with advisor on Monday at 4pm' and I'll remind you.",
 	u":thumbsup: What's on your todo list right now? Things like 'finish homework by 4pm' or 'walk the dog tonight' are some examples.",
 ]
 
 TUTORIAL_DONE_TEXT = u"It's that easy. Just txt me when things pop in your head and I'll track them for you. \U0001F60E What else do you need to do?"
 
 TUTORIAL_VCARD_AND_MORNING_DIGEST_TEXT = [
-	u"Oh and here's my card. Tap it to save me to your address book. I'll also send you your tasks in the morning \U0001F304 with that day's weather \U0001F31E",
+	u"Oh, and here's my card. Tap it to save me to your address book. I'll also send you your tasks in the morning \U0001F304 with that day's weather \U0001F31E",
 	u"BTW, here's my info. Tap it to save me to your address book :ok_hand:",
 ]
 TUTORIAL_MORNING_DIGEST_ONLY_TEXT = u"I'll also send you a morning txt \U0001F304 with with weather forecast \U0001F31E and daily tasks."  # used for whatsapp users
@@ -100,6 +100,7 @@ REMINDER_DIGEST_HEADERS = [
 		u"Happy Tuesday, :NAME:!",
 		u":see_no_evil: Morning! :hear_no_evil:",
 		u"Top of the mornin' to ya!",
+		u"Ready to tackle the day?",
 
 	],
 	[  # copy for Wednesday
@@ -141,7 +142,7 @@ REMINDER_DIGEST_HEADERS = [
 		u"Good morning!",
 		u"Sunday is for :zzz:",
 		u"Happy Sunday, :NAME:!",
-		u"Can you believe it's already Sunday?",
+		u"The best day of the week :sunglasses:",
 
 	],
 ]
@@ -156,6 +157,7 @@ REMINDER_DIGEST_EMPTY = [
 	[  # Monday
 		u"Start the week off right. Tell me what you need to get done! \U0001F60E",
 		u"Anything on your todo list for Monday? :pencil:",
+		u"What do you need to get done today?"
 	],
 	[  # Tuesday
 		u"No tasks today. I know it's hard to believe, but I'm really good at helping you get stuff done \U0001F4AD",
@@ -186,13 +188,16 @@ USER_REQUESTED_DIGEST_EMPTY = [
 	u"I don't have anything on record :eyeglasses: for you",
 	u"Nothing on your list, need to add anything? :ear:",
 	u"Your todo list :scroll: is clear right now",
+	u"Nothing on your plate today!", 
+	u"Looks like your todo list is clear :thumbsup:",
+	
 ]
 
 # Goes out with a digest until a user has checked off three tasks
 REMINDER_DIGEST_DONE_INSTRUCTIONS = ":white_check_mark: To check a task off, tell me what you're done with, like 'Done with calling Mom'"
 
 # Goes out with a digest if a user has had a task for many days
-REMINDER_DIGEST_SNOOZE_INSTRUCTIONS = ":sleeping_symbol: To snooze a task, just tell me when I should remind you, like 'Snooze buy flip flops to Saturday'"
+REMINDER_DIGEST_SNOOZE_INSTRUCTIONS = ":sleeping_symbol: To snooze a task, just tell me when I should remind you, like 'Snooze buy sneakers on Saturday'"
 
 CONFIRM_MORNING_DIGEST_LIMITED_STATE_TEXT = "Got it, I won't send you a morning txt when there are no tasks"
 
@@ -230,7 +235,8 @@ FOLLOWUP_TIME_TEXT = [
 # Used when you say "Done with mom" and we can't tell which entry you mean
 ENTRY_NOT_FOUND_TEXT = [
 	u"Sorry, I'm not sure what entry you mean. Could you rephrase?"
-	u"Didn't catch that, mind rephrasing?"
+	u"Didn't catch that, mind rephrasing?",
+	u"Not sure what you meant! Mind rephrasing?",
 ]
 
 
@@ -280,6 +286,8 @@ UNKNOWN_COMMAND_PHRASES = [
 	u"Err... Not sure what you mean.",
 	u"Not sure what that means :grimacing:",
 	u"Mind saying that again? I didn't get it :pensive:",
+	u"No idea what you're talkng about :cold_sweat:",
+	u":eyes:",
 ]
 
 # When someone says 'report' to let us know something went wrong
@@ -315,7 +323,7 @@ PAY_BILLS_TIP_TEXT = "Hey :NAME:, I can also track bills for you. :page_with_cur
 GROCERY_TIP_TEXT = "Hey :NAME:, Want any help remembering grocery list? You can say 'Buy pasta, cheese and sauce later today' :spaghetti:"
 TRASH_TIP_TEXT = "Hey :NAME:, do you have trouble remembering trash day? Just say 'Trash day every Tuesday' and I'll make sure you never forget. :pushpin:"
 APPOINTMENT_TIP_TEXT = "Btw, I'm great at reminding you about appointments. Just txt me when you need to go to the doctor, dentist, hair salon, DMV, etc. :mask:"
-TICKET_TIP_TEXT = "Want to remember to buy that show's tickets as soon as they go on sale? I can remind you at the exact time. Just txt me :ticket:"
+TICKET_TIP_TEXT = "Want to remember to buy those concert tickets as soon as they go on sale? I can remind you at the exact time. Just txt me :ticket:"
 SHARED_REMINDER_TIP1_TEXT = "I can now remind other people on your behalf. Just say 'Remind Anne about lunch tomorrow at 12pm'"
 TVSHOW_TIP_TEXT = "Want me to remind you when your favorite show is on TV? Just say 'Remind me to watch Law & Order SVU at 9pm every Wednesday'"
 GET_TASKS_TIP_TEXT = "Btw, you can see a list of all your tasks anytime. Just say 'What are my tasks?'"
@@ -324,15 +332,15 @@ WORKOUT_SCHEDULE_TEXT = "Hey :NAME:, having trouble going to the gym? Just let m
 
 # Mini tips: these go out at specific instances. Like when a user takes an action
 
-DONE_ALL_MINITIP_TEXT = "Pro tip: You can also say 'Done with everything' to mark all items as done."
+DONE_ALL_MINITIP_TEXT = "Pro tip: You can also say 'done with everything' to mark all items as done."
 DONE_TIP1_MINITIP_TEXT = "Just let me know when you're done and I'll check it off your list"
 DONE_TIP2_MINITIP_TEXT = "Let me know when you're done and I'll check it off for you"
 DONE_TIP3_MINITIP_TEXT = "Let me know when you're done!"
 SNOOZE_MINITIP_TEXT = "Also, you can always snooze a reminder by saying 'snooze for 5 mins' or 'snooze till 9pm'"
 DIGEST_QUESTION_MINITIP_TEXT = "btw, how useful do you find these morning txts? 1 (not useful) - 5 (very useful)"
-DIGEST_CHANGE_TIME_MINITIP_TEXT = "btw, when do you wake up? I can send this to you earlier or later in the day, just let me know what time is best"
+DIGEST_CHANGE_TIME_MINITIP_TEXT = "When do you wake up? I can send this to you earlier or later in the day, just let me know what time is best"
 SHARED_REMINDER_MINITIP_TEXT = "FYI - I can remind other people directly for you!"
-DIGEST_QUESTION_NPS_MINITIP_TEXT = "Quick q! How likely are you to recommend me to a friend?  1 (not likely) - 10 (extremely likely)"
+DIGEST_QUESTION_NPS_MINITIP_TEXT = "Quick Q! How likely are you to recommend me to a friend?  1 (not likely) - 10 (extremely likely)"
 REFERRAL_ASK_MINITIP_TEXT = "Also, I'm curious, how did you hear about me?"
 
 # This footer is appended only to the full tips
@@ -627,6 +635,10 @@ THANKYOU_RESPONSES = [
 	"Of course!",
 	"You got it!",
 	":kissing_heart:",
+	":muscle:",
+	"NP!",
+	":sunglasses:",
+	
 ]
 AGE_RESPONSE = u"I was born on April 29th, 2015. That makes me about %s old! \U0001F423"
 HOW_DO_I_SHARE_KEEPER_RESPONSE = ":clapping_hands_sign: Please send them to %s and thanks!"
